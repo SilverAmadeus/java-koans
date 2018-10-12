@@ -48,7 +48,7 @@ public class AboutAssertions {
         assertEquals(1, 1);
         assertEquals(2 + 2, 4);
         assertEquals(2 * 3, 6);
-        assertEquals(3 - 8, 5);
+        assertEquals(3 - 8, -5);
         assertEquals(10 / 2, 5);
     }
 
