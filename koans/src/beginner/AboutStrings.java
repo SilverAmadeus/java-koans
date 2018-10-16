@@ -122,11 +122,11 @@ public class AboutStrings {
     @Koan
     public void stringSubstring() {
         String str = "I AM a number ONE!";
-        assertEquals(str.substring(0), "I");
-        assertEquals(str.substring(1), " ");
-        assertEquals(str.substring(5), "a");
-        assertEquals(str.substring(14, 17), "ONE!");
-        assertEquals(str.substring(7, str.length()), "mber ONE!");
+        assertEquals(str.substring(0), "I AM a number ONE!");
+        assertEquals(str.substring(1), "I");
+        assertEquals(str.substring(5), " ");
+        assertEquals(str.substring(14, 17), " ONE!");
+        assertEquals(str.substring(7, str.length()), "number ONE!");
     }
 
     @Koan
