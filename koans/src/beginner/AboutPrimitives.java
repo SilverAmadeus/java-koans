@@ -9,13 +9,13 @@ public class AboutPrimitives {
 
     @Koan
     public void wholeNumbersAreOfTypeInt() {
-        assertEquals(getType(1), int.class); // hint: int.class
+        assertEquals(getType(1), int); // hint: int.class
     }
 
     @Koan
     public void primitivesOfTypeIntHaveAnObjectTypeInteger() {
         Object number = 1;
-        assertEquals(getType(number), int.class);
+        assertEquals(getType(number), int);
 
         // Primitives can be automatically changed into their object type via a process called auto-boxing
         // We will explore this in more detail in intermediate.AboutAutoboxing
@@ -34,13 +34,13 @@ public class AboutPrimitives {
 
     @Koan
     public void wholeNumbersCanAlsoBeOfTypeLong() {
-        assertEquals(getType(1L), long.class);
+        assertEquals(getType(1L), long);
     }
 
     @Koan
     public void primitivesOfTypeLongHaveAnObjectTypeLong() {
         Object number = 1L;
-        assertEquals(getType(number), number.class);
+        assertEquals(getType(number), long);
     }
 
     @Koan
@@ -56,13 +56,13 @@ public class AboutPrimitives {
 
     @Koan
     public void wholeNumbersCanAlsoBeOfTypeShort() {
-        assertEquals(getType((short) 1), short.class); // The '(short)' is called an explicit cast - to type 'short'
+        assertEquals(getType((short) 1), short); // The '(short)' is called an explicit cast - to type 'short'
     }
 
     @Koan
     public void primitivesOfTypeShortHaveAnObjectTypeShort() {
         Object number = (short) 1;
-        assertEquals(getType(number), short.class);
+        assertEquals(getType(number), short);
     }
 
     @Koan
@@ -78,13 +78,13 @@ public class AboutPrimitives {
 
     @Koan
     public void wholeNumbersCanAlsoBeOfTypeByte() {
-        assertEquals(getType((byte) 1), byte.class);
+        assertEquals(getType((byte) 1), byte);
     }
 
     @Koan
     public void primitivesOfTypeByteHaveAnObjectTypeByte() {
         Object number = (byte) 1;
-        assertEquals(getType(number), byte.class);
+        assertEquals(getType(number), byte);
     }
 
     @Koan
@@ -102,18 +102,18 @@ public class AboutPrimitives {
 
     @Koan
     public void wholeNumbersCanAlsoBeOfTypeChar() {
-        assertEquals(getType((char) 1), char.class);
+        assertEquals(getType((char) 1), char);
     }
 
     @Koan
     public void singleCharactersAreOfTypeChar() {
-        assertEquals(getType('a'), char.class);
+        assertEquals(getType('a'), char);
     }
 
     @Koan
     public void primitivesOfTypeCharHaveAnObjectTypeCharacter() {
         Object number = (char) 1;
-        assertEquals(getType(number), char.class);
+        assertEquals(getType(number), char);
     }
 
     @Koan
@@ -131,25 +131,25 @@ public class AboutPrimitives {
 
     @Koan
     public void decimalNumbersAreOfTypeDouble() {
-        assertEquals(getType(1.0), double.class);
+        assertEquals(getType(1.0), double);
     }
 
     @Koan
     public void primitivesOfTypeDoubleCanBeDeclaredWithoutTheDecimalPoint() {
-        assertEquals(getType(1d), double.class);
+        assertEquals(getType(1d), double);
     }
 
     @Koan
     public void primitivesOfTypeDoubleCanBeDeclaredWithExponents() {
-        assertEquals(getType(1e3), double.class);
-        assertEquals(1.0e3, double.class);
-        assertEquals(1E3, double.class);
+        assertEquals(getType(1e3), double);
+        assertEquals(1.0e3, double);
+        assertEquals(1E3, double);
     }
 
     @Koan
     public void primitivesOfTypeDoubleHaveAnObjectTypeDouble() {
         Object number = 1.0;
-        assertEquals(getType(number), double.class);
+        assertEquals(getType(number), double);
     }
 
     @Koan
@@ -165,20 +165,20 @@ public class AboutPrimitives {
 
     @Koan
     public void decimalNumbersCanAlsoBeOfTypeFloat() {
-        assertEquals(getType(1f), float.class);
+        assertEquals(getType(1f), float);
     }
 
     @Koan
     public void primitivesOfTypeFloatCanBeDeclaredWithExponents() {
-        assertEquals(getType(1e3f), float.class);
-        assertEquals(1.0e3f, float.class);
-        assertEquals(1E3f, float.class);
+        assertEquals(getType(1e3f), float);
+        assertEquals(1.0e3f, float);
+        assertEquals(1E3f, float);
     }
 
     @Koan
     public void primitivesOfTypeFloatHaveAnObjectTypeFloat() {
         Object number = 1f;
-        assertEquals(getType(number), float.class);
+        assertEquals(getType(number), float);
     }
 
     @Koan
