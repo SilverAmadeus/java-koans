@@ -82,7 +82,7 @@ public class AboutLoops {
         for (int j : is) {
             s += j + " ";
         }
-        assertEquals(s, "0 1 2 3 ");
+        assertEquals(s, "1 2 3 4 ");
     }
 
     @Koan
