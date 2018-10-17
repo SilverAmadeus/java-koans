@@ -58,7 +58,7 @@ public class AboutConditionals {
         else
             x--;
         // ...but they are recommended.
-        assertEquals(x, 0);
+        assertEquals(x, 10);
     }
 
     @Koan
