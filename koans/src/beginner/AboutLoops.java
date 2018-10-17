@@ -72,7 +72,7 @@ public class AboutLoops {
             }
             s += " - ";
         }
-        assertEquals(s, "(0, 0) (0, 1) (0, 2)  - (1, 0) (1, 1) (1, 2)  - (2, 0) (2, 1) (2, 2) ");
+        assertEquals(s, "(0, 0) (0, 1) (0, 2)  - (1, 0) (1, 1) (1, 2)  - (2, 0) (2, 1) (2, 2)  - ");
     }
 
     @Koan
@@ -82,7 +82,7 @@ public class AboutLoops {
         for (int j : is) {
             s += j + " ";
         }
-        assertEquals(s, __);
+        assertEquals(s, "0 1 2 3 ");
     }
 
     @Koan
@@ -91,7 +91,7 @@ public class AboutLoops {
         while (result < 3) {
             result++;
         }
-        assertEquals(result, __);
+        assertEquals(result, 3);
     }
 
     @Koan
@@ -100,7 +100,7 @@ public class AboutLoops {
         do {
             result++;
         } while (false);
-        assertEquals(result, __);
+        assertEquals(result, 1);
     }
 
     @Koan
@@ -113,7 +113,7 @@ public class AboutLoops {
             }
             count++;
         }
-        assertEquals(count, __);
+        assertEquals(count, 1);
     }
 
     @Koan
@@ -127,14 +127,14 @@ public class AboutLoops {
                 count++;
             }
         }
-        assertEquals(count, __);
+        assertEquals(count, 2);
     }
 
     @Koan
     public void forLoopContinueLabel() {
         int count = 0;
         outerLabel:
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 6; i++) { //6
             for (int j = 0; j < 6; j++) {
                 count++;
                 if (count > 2) {
@@ -145,7 +145,7 @@ public class AboutLoops {
         }
         // What does continue with a label mean?
         // What gets executed? Where does the program flow continue?
-        assertEquals(count, __);
+        assertEquals(count, 26);
     }
 
     @Koan
@@ -163,6 +163,6 @@ public class AboutLoops {
         }
         // What does break with a label mean?
         // What gets executed? Where does the program flow continue?
-        assertEquals(count, __);
+        assertEquals(count, 3);
     }
 }
