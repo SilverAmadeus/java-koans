@@ -169,8 +169,8 @@ public class AboutConditionals {
             x = "kthxbai";
         }
         assertEquals(x, "kthxbai");
-        assertEquals(trueCount.count, true);
-        assertEquals(falseCount.count, false);
+        assertEquals(trueCount.count, 1);
+        assertEquals(falseCount.count, 0);
     }
     
     @Koan
@@ -182,7 +182,7 @@ public class AboutConditionals {
             x = "kthxbai";
         }
         assertEquals(x, "kthxbai");
-        assertEquals(trueCount.count, true);
+        assertEquals(trueCount.count, 1);
         assertEquals(falseCount.count, false);
     }
     
