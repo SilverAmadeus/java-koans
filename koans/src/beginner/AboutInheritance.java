@@ -63,8 +63,8 @@ public class AboutInheritance {
         assertEquals(barney.makeSomeNoise(), "Squeak!");
         // but can max or barney (here as an Animal) fetch?
         // try to write it down here
-        assertEquals(max.canFetch(), true);
-        assertEquals(barney.canFetch(), false);
+        //assertEquals(max.canFetch(), true);
+        //assertEquals(barney.canFetch(), false);
     }
 
     @Koan
