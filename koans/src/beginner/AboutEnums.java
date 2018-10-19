@@ -9,7 +9,7 @@ public class AboutEnums {
 
 
     enum Colors {
-        Red, Blue, Green, Yellow // what happens if you add a ; here?
+        Red, Blue, Green, Yellow; // what happens if you add a ; here?
         // What happens if you type Red() instead?
     }
 
@@ -24,7 +24,7 @@ public class AboutEnums {
     @Koan
     public void basicEnumsAccess() {
         Colors[] colorArray = Colors.values();
-        assertEquals(colorArray[2], Green);
+        assertEquals(colorArray[2], Colors.Green);
     }
 
     enum SkatSuits {
