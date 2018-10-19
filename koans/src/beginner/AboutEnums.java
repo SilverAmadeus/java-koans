@@ -16,7 +16,7 @@ public class AboutEnums {
     @Koan
     public void basicEnums() {
         Colors blue = Colors.Blue;
-        assertEquals(blue == Colors.Blue, true)
+        assertEquals(blue == Colors.Blue, true);
         assertEquals(blue == Colors.Red, false);
         assertEquals(blue instanceof Colors, true);
     }
