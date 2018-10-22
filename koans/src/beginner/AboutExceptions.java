@@ -66,7 +66,7 @@ public class AboutExceptions {
     public void finallyIsAlwaysRan() {
         StringBuilder whatHappened = new StringBuilder();
         tryCatchFinallyWithVoidReturn(whatHappened);
-        assertEquals(whatHappened.toString(), "did something dangerous; the catch block executed");
+        assertEquals(whatHappened.toString(), "did something dangerous; the catch block executed, but so did the finally!");
     }
 
     @SuppressWarnings("finally")
@@ -91,8 +91,8 @@ public class AboutExceptions {
     public void returnInFinallyBlock() {
         StringBuilder whatHappened = new StringBuilder();
         // Which value will be returned here?
-        assertEquals(returnStatementsEverywhere(whatHappened), "from catch");
-        assertEquals(whatHappened.toString(), "try, catch");
+        assertEquals(returnStatementsEverywhere(whatHappened), "from finally");
+        assertEquals(whatHappened.toString(), "try, catch, finally");
     }
 
     private void doUncheckedStuff() {
