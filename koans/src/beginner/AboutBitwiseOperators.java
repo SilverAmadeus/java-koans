@@ -58,7 +58,7 @@ public class AboutBitwiseOperators {
     public void aboutBitShiftingRightUnsigned() {
         int rightShiftNegativeStaysNegative = 0x80000000;
         rightShiftNegativeStaysNegative = rightShiftNegativeStaysNegative >> 4;
-        assertEquals(rightShiftNegativeStaysNegative, 5);
+        assertEquals(rightShiftNegativeStaysNegative, -134217728);
         int unsignedRightShift = 0x80000000; // always fills with 0
         unsignedRightShift >>>= 4; // Just like +=
         assertEquals(unsignedRightShift, 4);
