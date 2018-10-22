@@ -12,7 +12,7 @@ public class AboutBitwiseOperators {
     public void fullAnd() {
         int i = 1;
         if (true & (++i < 8)) i = i + 1;
-        assertEquals(i, 2);
+        assertEquals(i, 3);
     }
 
     @Koan
