@@ -20,7 +20,7 @@ public class AboutArrays {
     @Koan
     public void cloneEqualityIsNotRespected() { //!
         int[] original = new int[]{1};
-        assertEquals(original.equals(original.clone()), true);
+        assertEquals(original.equals(original.clone()), false);
     }
 
     @Koan
