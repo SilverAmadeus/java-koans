@@ -51,7 +51,7 @@ public class AboutBitwiseOperators {
     public void aboutBitShiftingLeftShift() {
         int leftShift = 0x80000000; // Is this number positive or negative?
         leftShift = leftShift << 1;
-        assertEquals(leftShift, -2147483648);
+        assertEquals(leftShift, 0);
     }
 
     @Koan
