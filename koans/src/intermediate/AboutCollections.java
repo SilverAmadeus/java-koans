@@ -38,7 +38,7 @@ public class AboutCollections {
         assertEquals(queue.poll(), "Cat");
         assertEquals(queue.size(), 1);
         assertEquals(queue.poll(), "Dog");
-        assertEquals(queue.isEmpty(), false);
+        assertEquals(queue.isEmpty(), true);
     }
 
     @Koan
