@@ -76,8 +76,8 @@ public class AboutComparison {
         RaceHorse[] horses = {lindy, slowy, lightning};
 
         Arrays.sort(horses, new HorseAgeComparator());
-        assertEquals(horses[0], "Speed: 10 Age: 2");
+        assertEquals(horses[0], lindy);
         Arrays.sort(horses, new HorseSpeedComparator());
-        assertEquals(horses[0], -2  );
+        assertEquals(horses[0], lightning);
     }
 }
