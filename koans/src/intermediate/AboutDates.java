@@ -41,7 +41,7 @@ public class AboutDates {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         cal.roll(Calendar.MONTH, 12);
-        assertEquals(cal.getTime().toString(), "Sat Mar 03 13:33:21 GMT 1973");
+        assertEquals(cal.getTime().toString(), "Sat Mar 03 08:33:21 EST 1973");
     }
 
     @Koan
