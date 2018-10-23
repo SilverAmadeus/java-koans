@@ -14,9 +14,9 @@ public class AboutComparison {
     public void compareObjects() {
         String a = "abc";
         String b = "bcd";
-        assertEquals(a.compareTo(b), false);
-        assertEquals(a.compareTo(a), true);
-        assertEquals(b.compareTo(a), false);
+        assertEquals(a.compareTo(b), -1);
+        assertEquals(a.compareTo(a), 0);
+        assertEquals(b.compareTo(a), -1);
     }
 
     static class Car implements Comparable<Car> {
@@ -78,6 +78,6 @@ public class AboutComparison {
         Arrays.sort(horses, new HorseAgeComparator());
         assertEquals(horses[0], -7);
         Arrays.sort(horses, new HorseSpeedComparator());
-        assertEquals(horses[0], -2);
+        assertEquals(horses[0], -2  );
     }
 }
