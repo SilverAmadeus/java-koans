@@ -89,9 +89,9 @@ public class AboutCollections {
         assertEquals(backedMap.size(), 2);
         assertEquals(map.size(), 5);
         backedMap.put("d", "Dog");
-        assertEquals(backedMap.size(), 2);
-        assertEquals(map.size(), 3);
-        assertEquals(map.containsKey("d"), false);
+        assertEquals(backedMap.size(), 3);
+        assertEquals(map.size(), 6);
+        assertEquals(map.containsKey("d"), true);
         // Again: backed maps are just like those little quantum states
         // that are connected forever...
     }
