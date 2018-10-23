@@ -16,7 +16,7 @@ public class AboutComparison {
         String b = "bcd";
         assertEquals(a.compareTo(b), -1);
         assertEquals(a.compareTo(a), 0);
-        assertEquals(b.compareTo(a), -1);
+        assertEquals(b.compareTo(a), 1);
     }
 
     static class Car implements Comparable<Car> {
