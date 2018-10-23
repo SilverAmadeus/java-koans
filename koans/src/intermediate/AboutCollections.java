@@ -116,6 +116,6 @@ public class AboutCollections {
         for (String s : ordered) {
             sb.append(s);
         }
-        assertEquals(sb.toString(), "Something");
+        assertEquals(sb.toString(), "cza");
     }
 }
