@@ -94,7 +94,7 @@ public class AboutInnerClasses {
     public void creatingAnonymousInnerClassesToImplementInterface() {
         Ignoreable ignoreable = new Ignoreable() {
             public String ignoreAll() {
-                return null;
+                return "SomeInterestingString";
             }
         }; // Complete the code so that the statement below is correct.
         // Look at the koan above for inspiration
