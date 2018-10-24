@@ -39,7 +39,7 @@ public class AboutFileIO {
         size = fr.read(in);
         // No flush necessary!
         fr.close();
-        assertEquals(size, file);
+        assertEquals(size, 22);
         String expected = new String(in);
         assertEquals(expected.length(), size);
         assertEquals(expected, file);
