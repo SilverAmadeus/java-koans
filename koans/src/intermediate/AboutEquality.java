@@ -47,7 +47,7 @@ public class AboutEquality {
                 return false;
             }
 
-            if (this.hashCode == other.hashCode){
+            if (this.hashCode() == other.hashCode()){
 
                 return true;
             }
