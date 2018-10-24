@@ -113,7 +113,7 @@ public class AboutEquality {
 
         @Override
         public int hashCode() {
-            return 4000;
+            return (this.color).hashCode();
         }
 
         @Override
