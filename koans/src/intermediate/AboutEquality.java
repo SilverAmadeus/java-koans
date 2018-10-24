@@ -44,15 +44,15 @@ public class AboutEquality {
             // http://download.oracle.com/javase/6/docs/api/java/lang/Object.html#equals(java.lang.Object)
             if (!(other instanceof Car)){
 
-                return false
+                return false;
             }
 
             if (this.hashCode == other.hashCode){
 
-                return true
+                return true;
             }
 
-            return false
+            return false;
         }
 
         @Override
