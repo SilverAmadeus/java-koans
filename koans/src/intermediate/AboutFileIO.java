@@ -106,7 +106,7 @@ public class AboutFileIO {
         } finally {
             closeStream(bufferedReader);
 }
-        assertEquals(sb.toString(), "1. line\n2. line");
+        assertEquals(sb.toString(), "1. line2. line");
     }
 }
 
