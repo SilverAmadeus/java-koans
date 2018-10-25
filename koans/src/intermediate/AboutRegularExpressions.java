@@ -18,10 +18,10 @@ public class AboutRegularExpressions {
         Matcher m = p.matcher("xyzxxxxyz");
         // index 012345678
         assertEquals(m.find(), true);
-        assertEquals(m.start(), true);
-        assertEquals(m.find(), __);
-        assertEquals(m.start(), __);
-        assertEquals(m.find(), __);
+        assertEquals(m.start(), 0);
+        assertEquals(m.find(), true);
+        assertEquals(m.start(), 0);
+        assertEquals(m.find(), true);
     }
 
     @Koan
