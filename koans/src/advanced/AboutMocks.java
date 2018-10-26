@@ -35,7 +35,7 @@ public class AboutMocks {
         }
     }
 
-    static class GoodCollaborator {
+    static class GoodCollaborator implements Collaborator {
         public void doBusinessStuff(){}
     }
 
@@ -44,7 +44,7 @@ public class AboutMocks {
         // HINT: pass a safe Collaborator implementation to constructor
         // new ClassUnderTest(new Collaborator(){... it should not be the
         // objective of this test to test that collaborator, so replace it
-        GoodCollaborator goodCollab = new GoodCollaborator();
+        Collaborator goodCollab = new GoodCollaborator();
         new ClassUnderTest(goodCollab).doSomething();
     }
 
