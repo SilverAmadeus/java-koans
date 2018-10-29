@@ -83,7 +83,7 @@ public class AboutLambdas {
     public void thisIsSurroundingClass() {
         //"this" in lambda points to surrounding class
         Function<String, String> foo = s -> s + this.fieldFoo + s;
-        assertEquals(foo.apply("|"), __);
+        assertEquals(foo.apply("|"), "|Lambdas|");
     }
 
 }
