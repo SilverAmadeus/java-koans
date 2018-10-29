@@ -32,7 +32,7 @@ public class AboutJava7LiteralsEnhancements {
     @Koan
     public void negativeBinaryLiteral() {
         int negativeBinaryLiteral = 0b1111_1111_1111_1111_1111_1111_1111_1100 / 4;
-        assertEquals(negativeBinaryLiteral, (short) -1);
+        assertEquals(negativeBinaryLiteral, -1);
     }
 
     @Koan
