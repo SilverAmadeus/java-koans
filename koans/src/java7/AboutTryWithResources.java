@@ -96,7 +96,7 @@ public class AboutTryWithResources {
         } catch (CloseException e) {
             message += e.getMessage();
         }
-        assertEquals(message, __);
+        assertEquals(message, "Exception thrown while working Exception thrown while closing");
     }
 
 
