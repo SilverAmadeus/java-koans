@@ -55,12 +55,12 @@ public class AboutLambdas {
 
     @Koan
     public void lambdaField() {
-        assertEquals(thisLambdaField.capitalize(""), "");
+        assertEquals(thisLambdaField.capitalize(""), "CAPS");
     }
 
     @Koan
     public void lambdaField2() {
-        assertEquals(toStringLambdaField.capitalize(""), "");
+        assertEquals(toStringLambdaField.capitalize(""), "CAPS");
     }
 
     @Koan
