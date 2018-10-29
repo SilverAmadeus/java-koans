@@ -11,14 +11,14 @@ public class AboutJava7LiteralsEnhancements {
     public void binaryLiterals() {
         //binary literals are marked with 0b prefix
         short binaryLiteral = 0b1111;
-        assertEquals(binaryLiteral, __);
+        assertEquals(binaryLiteral, 15);
     }
 
     @Koan
     public void binaryLiteralsWithUnderscores() {
         //literals can use underscores for improved readability
         short binaryLiteral = 0b1111_1111;
-        assertEquals(binaryLiteral, __);
+        assertEquals(binaryLiteral, 255);
     }
 
     @Koan
@@ -26,7 +26,7 @@ public class AboutJava7LiteralsEnhancements {
         long literal = 111_111_111L;
         //notice capital "B" - a valid binary literal prefix
         short multiplier = 0B1_000;
-        assertEquals(literal * multiplier, __);
+        assertEquals(literal * multiplier, 4);
     }
 
     @Koan
@@ -38,7 +38,7 @@ public class AboutJava7LiteralsEnhancements {
     @Koan
     public void binaryLiteralsWithBitwiseOperator() {
         int binaryLiteral = ~0b1111_1111;
-        assertEquals(binaryLiteral, __);
+        assertEquals(binaryLiteral, 255);
     }
 
 }
