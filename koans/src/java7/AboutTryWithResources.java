@@ -47,7 +47,7 @@ public class AboutTryWithResources {
         } catch (IOException e) {
             line = "error";
         }
-        assertEquals(line, "first line\nsecond line");
+        assertEquals(line, "first line");
     }
 
     @Koan
@@ -83,7 +83,7 @@ public class AboutTryWithResources {
         } catch (IOException e) {
             line = "error";
         }
-        assertEquals(line, "first line\nsecond line");
+        assertEquals(line, "first line");
     }
 
     @Koan
