@@ -19,7 +19,7 @@ public class AboutStreams {
     @Koan
     public void simpleCount() {
         long count = places.stream().count();
-        assertEquals(count, __);
+        assertEquals(count, 6);
     }
 
     @Koan
@@ -27,7 +27,7 @@ public class AboutStreams {
         long count = places.stream()
                 .filter(s -> s.startsWith("S"))
                 .count();
-        assertEquals(count, __);
+        assertEquals(count, 2);
     }
 
     @Koan
@@ -35,7 +35,7 @@ public class AboutStreams {
         String longest = places.stream()
                 .max(Comparator.comparing(cityName -> cityName.length()))
                 .get();
-        assertEquals(longest, __);
+        assertEquals(longest, "Ljubljana");
     }
 
     @Koan
@@ -43,14 +43,14 @@ public class AboutStreams {
         String shortest = places.stream()
                 .min(Comparator.comparing(cityName -> cityName.length()))
                 .get();
-        assertEquals(shortest, __);
+        assertEquals(shortest, "Zagreb");
     }
 
     @Koan
     public void reduce() {
         String join = places.stream()
                 .reduce("", String::concat);
-        assertEquals(join, __);
+        assertEquals(join, "BelgradeZagrebSarajevoSkopjeLjubljanaPodgorica");
     }
 
     @Koan
