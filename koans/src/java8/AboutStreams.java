@@ -19,7 +19,7 @@ public class AboutStreams {
     @Koan
     public void simpleCount() {
         long count = places.stream().count();
-        assertEquals(count, 6);
+        assertEquals(count, (long) 6);
     }
 
     @Koan
@@ -27,7 +27,7 @@ public class AboutStreams {
         long count = places.stream()
                 .filter(s -> s.startsWith("S"))
                 .count();
-        assertEquals(count, 2);
+        assertEquals(count, (long) 2);
     }
 
     @Koan
